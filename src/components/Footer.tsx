@@ -43,9 +43,9 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.topSection}>
-          <div className={styles.brand}>
+          <div className={styles.brand}> 
             <a href="#home" className={styles.logo}>
-              KALAIMAGAL<span className="gradient-text">.S</span>
+              KALAIMAGAL<span className="gradient-text">  S</span>
             </a>
             <p className={styles.description}>
               AI & Data Science undergraduate passionate about building scalable solutions and transforming raw data into actionable insights.

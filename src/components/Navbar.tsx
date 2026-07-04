@@ -36,7 +36,7 @@ export default function Navbar() {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
         <a href="#home" className={styles.logo}>
-          KALAIMAGAL<span className="gradient-text">.S</span>
+          KALAIMAGAL<span className="gradient-text">  S</span>
         </a>
 
         {/* Desktop Navigation */}

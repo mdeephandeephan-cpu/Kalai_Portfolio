@@ -125,15 +125,6 @@ ${formState.message}`;
       github: "https://github.com/kalaiii-23/GetAGrip" // Fallback project link
     },
     {
-      id: "expense-tracker",
-      title: "Expense Tracker",
-      category: "mobile",
-      description: "Offline-first mobile application designed to log, manage, and visualize daily expenditures.",
-      longDescription: "Built with React Native and Expo utilizing TypeScript. Integrates local storage mechanisms for secure, device-only data logging. Incorporates detailed category filtering, monthly budget warnings, and interactive spending charts to help users manage their financial health.",
-      tech: ["React Native", "Expo", "TypeScript", "AsyncStorage"],
-      github: "https://github.com/kalaiii-23/Expense-Tracker"
-    },
-    {
       id: "recipe-finder",
       title: "Recipe Finder",
       category: "web",
@@ -141,15 +132,6 @@ ${formState.message}`;
       longDescription: "Developed using pure JavaScript with external API integration. Designed a responsive UI to support fluid cross-device navigation and optimized DOM rendering logic to drastically reduce search latency by 40%.",
       tech: ["JavaScript", "HTML5", "CSS3", "MealDB API", "DOM Optimizations"],
       github: "https://github.com/kalaiii-23/Recipe-Finder"
-    },
-    {
-      id: "intranet-mailing",
-      title: "Intranet Mailing System",
-      category: "desktop",
-      description: "Desktop-based local mailing application optimized for secure offline message handling within closed networks.",
-      longDescription: "Developed in Java using the Swing framework. Implemented modular compose, send, and receive utilities with strict adherence to OOP principles. Features offline local message caching and custom serialization for storing user messages securely.",
-      tech: ["Java", "Java Swing", "OOP Principles", "File IO"],
-      github: "https://github.com/kalaiii-23" // General github fallback
     }
   ];
 
@@ -315,14 +297,10 @@ ${formState.message}`;
                 </div>
                 <div className={styles.skillCard}>
                   <span className={styles.skillName}>Java</span>
-                  <span className={styles.level}>Intermediate</span>
-                </div>
-                <div className={styles.skillCard}>
-                  <span className={styles.skillName}>JavaScript</span>
                   <span className={styles.level}>Advanced</span>
                 </div>
                 <div className={styles.skillCard}>
-                  <span className={styles.skillName}>TypeScript</span>
+                  <span className={styles.skillName}>JavaScript</span>
                   <span className={styles.level}>Intermediate</span>
                 </div>
               </div>
@@ -363,11 +341,11 @@ ${formState.message}`;
               <div className={styles.skillList}>
                 <div className={styles.skillCard}>
                   <span className={styles.skillName}>Microsoft Power BI</span>
-                  <span className={styles.level}>Advanced</span>
+                  <span className={styles.level}>Intermediate</span>
                 </div>
                 <div className={styles.skillCard}>
                   <span className={styles.skillName}>MySQL / SQL Databases</span>
-                  <span className={styles.level}>Intermediate</span>
+                  <span className={styles.level}>Advanced</span>
                 </div>
                 <div className={styles.skillCard}>
                   <span className={styles.skillName}>Microsoft Excel</span>
