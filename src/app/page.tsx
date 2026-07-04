@@ -79,7 +79,25 @@ export default function Home() {
       alert("Please fill in all required fields.");
       return;
     }
-    // Simulate successful form submission
+
+    // Construct the WhatsApp message details
+    const whatsappNumber = "917305512647";
+    const messageText = `Hello Kalaimagal S,
+
+My name is *${formState.name}*
+Email: ${formState.email}
+Subject: *${formState.subject || "General Inquiry"}*
+
+Message:
+${formState.message}`;
+
+    const encodedMessage = encodeURIComponent(messageText);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    // Open WhatsApp API in a new tab
+    window.open(whatsappUrl, "_blank");
+
+    // Set local state to show positive feedback on the form
     setIsSubmitted(true);
     setTimeout(() => {
       setIsSubmitted(false);
@@ -132,15 +150,6 @@ export default function Home() {
       longDescription: "Developed in Java using the Swing framework. Implemented modular compose, send, and receive utilities with strict adherence to OOP principles. Features offline local message caching and custom serialization for storing user messages securely.",
       tech: ["Java", "Java Swing", "OOP Principles", "File IO"],
       github: "https://github.com/kalaiii-23" // General github fallback
-    },
-    {
-      id: "codsoft-tasks",
-      title: "Codsoft Java Tasks",
-      category: "desktop",
-      description: "A collection of academic Java applications showcasing algorithmic logic and OOP programming standards.",
-      longDescription: "Includes CODSOFT-TASK1 (Interactive Number Guessing Game), CODSOFT-TASK2 (Student Grade Calculator with grade metrics), and CODSOFT-TASK3 (Object-oriented ATM Interface with simulated bank account transactions).",
-      tech: ["Java", "OOP", "Data Structures"],
-      github: "https://github.com/kalaiii-23?tab=repositories"
     }
   ];
 
@@ -157,7 +166,7 @@ export default function Home() {
             <div className={`${styles.heroContent} animate-slide-right`}>
               <span className={styles.badge}>AI & Data Science Student</span>
               <h1 className={styles.heroTitle}>
-                Hi, I'm <span className="gradient-text">Kalaimagal S</span>
+                Hi, I'm <span className="gradient-text">Kalaimagal Sadhasivam</span>
               </h1>
               <p className={styles.heroSubtitle}>
                 B.Tech Student in Artificial Intelligence & Data Science | Web Developer & Data Analyst
@@ -205,7 +214,7 @@ export default function Home() {
               <div className={styles.imageWrapper}>
                 <Image 
                   src="/assets/profile.jpg" 
-                  alt="Kalaimagal S Passport Size Photo" 
+                  alt="Kalaimagal Sadhasivam Passport Size Photo" 
                   width={320} 
                   height={400} 
                   priority
@@ -362,10 +371,6 @@ export default function Home() {
                 </div>
                 <div className={styles.skillCard}>
                   <span className={styles.skillName}>Microsoft Excel</span>
-                  <span className={styles.level}>Advanced</span>
-                </div>
-                <div className={styles.skillCard}>
-                  <span className={styles.skillName}>MS Office Suite</span>
                   <span className={styles.level}>Advanced</span>
                 </div>
               </div>
@@ -634,7 +639,7 @@ export default function Home() {
                 <div className={styles.successMessage}>
                   <CheckCircle size={48} className={styles.successIcon} />
                   <h3>Message Sent Successfully!</h3>
-                  <p>Thank you, Kalaimagal S will get back to you shortly.</p>
+                  <p>Thank you, Kalaimagal Sadhasivam will get back to you shortly.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className={styles.contactForm}>
